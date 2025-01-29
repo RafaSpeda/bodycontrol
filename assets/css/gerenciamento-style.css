@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000000ef;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Botão de nova matrícula */
+#matricula {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0;
+    background-color: #e0e0e0;
+    margin-top: 32px;
+}
+
+#matricula a {
+    background-color: #4f4f4f;
+    color: white;
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#matricula a:hover {
+    background-color: #6b6b6b;
+}
+
+/* Contêiner para o formulário e botão */
+#container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    background-color: #e0e0e0;
+    flex-wrap: wrap;
+}
+
+/* Formulário de consulta */
+#consultar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #e0e0e0;
+    padding: 16px;
+    width: 45%;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin-bottom: 16px;
+}
+
+#consultar label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 16px;
+}
+
+#consultar input[type="text"],
+#consultar input[type="submit"] {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #333;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+#consultar input[type="submit"] {
+    background-color: #4f4f4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#consultar input[type="submit"]:hover {
+    background-color: #6b6b6b;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    word-wrap: break-word;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #matricula {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    #consultar {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+}
+
+footer {
+    color: #000;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+#logout {
+    color: #333; 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#logout:hover {
+    background-color: #e0e0e0; 
+    color: #000; 
+}
+
