@@ -63,3 +63,8 @@ Abra seu gerenciador de banco de dados (como MySQL Workbench ou DBeaver) e execu
 
 ## ACESSANDO
 Após configurar o ambiente, adicione os arquivos à pasta htdocs e acesse a aplicação através de http://localhost/academia/pages/ para explorar as funcionalidades da ferramenta.
+
+### CREDENCIAIS
+As credenciais de login são:
+- **E-mail:** suaacademia@bodycontrol.com
+- **Senha:** senha_secreta
